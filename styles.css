@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("Mother's Day Image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #FFD1DC; /* this won't do much bc image is background */
+    /* how do i make the background image blurry without making the text blurry? */
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    overflow: hidden;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.container {
+    align-self: top;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: fit-content;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(1rem);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+button {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056B3;
+}
+
+.hidden {
+    display: none;
+}
+
+#story {
+    margin-top: 1rem;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-family: 'IM Fell English', serif;
+    background-color: #FEEBC8;
+    padding: 15px;
+}
+
+.story-paragraph {
+    opacity: 0;
+    transform: translateX(-1rem);
+    animation: fadeInLeft 4s forwards;
+    margin: 5px;
+}
+
+@keyframes fadeInLeft {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.story-paragraph + .story-paragraph {
+    animation-delay: 2s;
+}
+
+.story-paragraph + .story-paragraph + .story-paragraph {
+    animation-delay: 4.5s;
+}
+
+.story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph {
+    animation-delay: 7s;
+}
+
+.story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph {
+    animation-delay: 9.5s;
+}
+
+.story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph {
+    animation-delay: 12s;
+}
+
+.story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph {
+    animation-delay: 14.5s;
+}
+
+.story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph + .story-paragraph {
+    animation-delay: 17s;
+}
