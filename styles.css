@@ -101,6 +101,8 @@ button:hover {
     font-family: 'IM Fell English', serif;
     background-color: #FEEBC8;
     padding: 15px;
+    max-height: 95%;
+    overflow-y: auto;
 }
 
 .story-paragraph {
